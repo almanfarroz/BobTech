@@ -46,22 +46,22 @@ class Invoice extends BaseController
         $transaction = $this->transaction->select('*')->orderBy('id', 'DESC')->limit(1)->first();
         $delivery = $this->courier->select('price')->where(['courier_name' => $transaction['delivery_courier']])->first();
         $payment = $this->payment->select('admin_fee')->where(['payment_method' => $transaction['payment_method']])->first();
-        $users = $this->user->select('name')->where(['name' => session("name")])->first();
         $data = [
-            'imageSrc'    => $this->imageToBase64(ROOTPATH . 'public\assets\lunaticLogo.png'),
+            'imageSrc'    => $this->imageToBase64(ROOTPATH . 'public\assets\logo.png'),
             'item_name'         => $transaction['item_name'],
-            'size'      => $transaction['size'],
             'quantity' => $transaction['quantity'],
             'price'        => $transaction['price'],
             'payment_method' => $transaction['payment_method'],
             'delivery_courier' => $transaction['delivery_courier'],
             'address' => $transaction['address'],
             'total_price' => $transaction['total_price'],
-            'id' => $transaction['id'],
-            'created_at' => $transaction['created_at'],
             'delivery_price' => $delivery['price'],
             'admin_fee' => $payment['admin_fee'],
-            'user' => $users->name
+            'delivery_courier' => $transaction['delivery_courier'],
+            'payment_method' => $transaction['payment_method'],   
+            'id' => $transaction['id'],
+            'created_at' => $transaction['created_at'],
+            'user' => $transaction['user']
         ];
         $html = view('store/invoice.php', $data);
         $dompdf->loadHtml($html);
@@ -70,26 +70,27 @@ class Invoice extends BaseController
     }
 
     public function cartInv($id = ''){
-        $dompdf = new Dompdf();
-        $transaction = $this->transaction->select('*')->where(['id' => $id])->first();
+        $transaction = $this->transaction->select('*')->orderBy('id', 'DESC')->limit(1)->first();
         $delivery = $this->courier->select('price')->where(['courier_name' => $transaction['delivery_courier']])->first();
         $payment = $this->payment->select('admin_fee')->where(['payment_method' => $transaction['payment_method']])->first();
-        $users = $this->user->select('name')->where(['name' => session("name")])->first();
+        $dompdf = new Dompdf();
+        $transaction = $this->transaction->select('*')->where(['id' => $id])->first();
         $data = [
-            'imageSrc'    => $this->imageToBase64(ROOTPATH . 'public\assets\lunaticLogo.png'),
+            'imageSrc'    => $this->imageToBase64(ROOTPATH . 'public\assets\logo.png'),
             'item_name'         => $transaction['item_name'],
-            'size'      => $transaction['size'],
             'quantity' => $transaction['quantity'],
             'price'        => $transaction['price'],
             'payment_method' => $transaction['payment_method'],
             'delivery_courier' => $transaction['delivery_courier'],
             'address' => $transaction['address'],
             'total_price' => $transaction['total_price'],
-            'id' => $transaction['id'],
-            'created_at' => $transaction['created_at'],
             'delivery_price' => $delivery['price'],
             'admin_fee' => $payment['admin_fee'],
-            'user' => $users->name
+            'delivery_courier' => $transaction['delivery_courier'],
+            'payment_method' => $transaction['payment_method'],   
+            'id' => $transaction['id'],
+            'created_at' => $transaction['created_at'],
+            'user' => $transaction['user']
         ];
         $html = view('store/invoice.php', $data);
         $dompdf->loadHtml($html);

@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\CourierModel;
 use App\Models\PaymentModel;
+use App\Models\IncomeOutcomeModel;
 use App\Models\TransactionModel;
 use App\Models\StockModel;
 
@@ -15,6 +16,7 @@ class Transaction extends BaseController
     protected $courier;
     protected $payment;
     protected $stock;
+    protected $in_out;
 
     public function __construct()
     {
@@ -22,6 +24,7 @@ class Transaction extends BaseController
         $this->stock = new StockModel();
         $this->courier = new CourierModel();
         $this->payment = new PaymentModel();
+        $this->in_out = new IncomeOutcomeModel();
     }
 
     public function index()
@@ -60,7 +63,6 @@ class Transaction extends BaseController
 
         $this->transaction->insert([
             'item_name' => $this->request->getPost('item_name'),
-            'size' => $this->request->getPost('size'),
             'quantity' => $this->request->getPost('quantity'),
             'price' => $this->request->getPost('price'),
             'payment_method' => $this->request->getPost('payment_method'),
@@ -68,8 +70,10 @@ class Transaction extends BaseController
             'total_price' => $this->request->getPost('quantity')*$this->request->getPost('price')+$pay+$cour,
             'address' => session('address'),
             'user' => session('name'),
+            'type' => 'sell',
         ]);
 
+        
         return redirect()->route('transactions');
     }
 
@@ -77,6 +81,10 @@ class Transaction extends BaseController
         $stockQty = $this->request->getPost('quantity');
         $this->transaction->where(['id' => $this->request->getPost('id')])->set('status','paid')->update();
         $this->stock->where(['name' => $this->request->getPost('item_name')])->set('stock', "stock - $stockQty", FALSE )->update();
+        
+        $total_price = $this->request->getPost('quantity')*$this->request->getPost('price');
+        $this->in_out->where(['id' => '1'])->set('income', "income + $total_price", FALSE)->update();
+
         return redirect()->to('/confirm');
     }
 

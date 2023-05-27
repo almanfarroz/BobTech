@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'store',
+        'database' => 'BobTech',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

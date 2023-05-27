@@ -58,6 +58,8 @@ $routes->get('transaction/(:any)', 'Transaction::$1');
 $routes->post('transaction/(:any)', 'Transaction::$1');
 $routes->get('invoice/(:any)', 'Invoice::$1');
 $routes->post('invoice/(:any)', 'Invoice::$1');
+$routes->get('main/(:any)', 'Main::$1');
+$routes->post('main/(:any)', 'Main::$1');
 
 
 /*

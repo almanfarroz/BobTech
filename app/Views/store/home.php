@@ -1,37 +1,61 @@
-<div class="flex flex-col bg-slate-200 overflow-hidden">
+<div class="flex flex-col bg-slate-700 overflow-hidden">
 <div class="hero min-h-screen" style="background-image: url(<?php echo base_url();?>assets/hero.jpg);">
-  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-overlay bg-opacity-80"></div>
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-extralight">"WE ARE LUNATIC"</h1>
-      <p class="mb-5">In our society we are considered a minority. We are here to vocalize our voices, ambitions, and thoughts. Most of the time our dreams and ideas are called lunatic by the majority.
-</p>
-    <a href="<?=base_url('/store')?>">  <button class="underline font-bold text-xl">Become a Lunatic Now!</button> </a>
+      <img src="<?= base_url()?>assets/logo.png" class="ml-2">
+      <p class="mb-5"> Computer Parts For Everyone. </p>
+    <a href="<?= base_url() ?>#buy">  <button class="underline font-bold text-xl">Buy Computer Parts</button> </a>
     </div>
   </div>
 </div>
 
+<div class="my-5 flex w-full flex-col gap-3 justify-center items-center  h-auto lg:min-h-screen" id="buy">
 
-<div class="hero min-h-screen bg-slate-200 text-black overflow-hidden">
-  <div class="hero-content flex-col lg:flex-row">
-    <img src="<?php echo base_url();?>assets/hero-2.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-    <div>
-      <h1 class="text-5xl font-light">Check out our latest release!</h1>
-      <p class="py-6">Lunatic! Third Wave "Stand Out".</p>
-      <a href="<?php echo base_url('buy/display/3') ?>" class="text-zinc-700 underline font-bold text-xl">Grab Yours Now!</a>
-    </div>
+<select name="category" id="category" class="bg-slate-500 mt-24 text-slate-50 rounded-lg h-12" <?php if(!session('isAdmin')) echo "required"; ?>>
+                        <option value="">Select Category</option>
+                        <?php foreach ($category as $key => $value) : ?>
+                        <option value="<?=$value['id']?>" ><?=$value['category_name']?> </option>
+                        <?php endforeach; ?>
+                    </select>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 justify-center flex-wrap gap-5" id="items">
+<?php if(count($list) > 0){ ?>
+<?php $i=1; ?>
+<?php foreach($list as $row): ?>
+    <a href="<?= base_url('buy/display/'.$row->id)?>">
+    <div class="card text-white cursor-pointer w-40 lg:w-64 h-80 lg:h-96 min-h-none bg-slate-500 shadow-xl rounded-lg">
+  <figure><img src="<?php echo base_url(); echo $row->imagePath; ?>" alt="Shoes" class="w-" /></figure>
+  <div class="card-body">
+    <h2 class="card-title text-sm">
+      <?= $row -> name ?>
+    </h2>
+    <p class="text-sm">Rp.<?= number_format($row->price, 2,',','.'); ?> </p>
   </div>
 </div>
-
-<div class="hero min-h-screen bg-zinc-800 overflow-hidden">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <img src="<?php echo base_url();?>assets/hero-1.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-    <div>
-      <h1 class="text-5xl font-light text-slate-200">Limited Resale!</h1>
-      <p class="py-6 text-slate-200">Lunatic! First Wave "Lunatic Society" limited resale only for the first 100 customers.</p>
-      <a href="<?php echo base_url('buy/display/1') ?>" class="text-slate-200 underline font-bold text-xl">Don't Miss Out</a>
-    </div>
-  </div>
+</a>
+    <?php endforeach; ?>
+    <?php } ?>
+</div>
 </div>
 
-</div>
+<script>
+        $(document).ready(function(){
+
+      $('#category').change(function() {
+        var category = $("#category").val();
+        if(category > 0){
+$.ajax({
+  method: "POST",
+          url: "<?= base_url('main/stock') ?>",
+          cache: false,
+data:{category: category},
+success: function(data){
+  $('#items').html(data)
+}
+})
+        }
+      });
+    });
+
+</script>

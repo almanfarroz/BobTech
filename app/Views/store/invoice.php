@@ -142,13 +142,11 @@
 						<table>
 							<tr>
 								<td>
-									Lunatic Office<br />
-									Bogor<br />
-									Indonesia
+									BobTech<br />
 								</td>
 
 								<td>
-									From: Lunatc.co<br />
+									From: BobTech<br />
 								</td>
 							</tr>
                             <tr>
@@ -172,7 +170,7 @@
 				<tr class="details">
 					<td><?= $payment_method ?></td>
 
-					<td>Rp.<?= $total_price ?></td>
+					<td>Rp.<?= $admin_fee ?></td>
 				</tr>
 
 				<tr class="heading">
@@ -187,16 +185,11 @@
 					<td>Rp.<?php $priceQty = $price * $quantity; echo $priceQty ?></td>
 				</tr>
 
-				<tr class="item">
-					<td><?= $delivery_courier ?></td>
-
-					<td><?= $delivery_price ?></td>
-				</tr>
-
 				<tr class="item last">
-					<td>Admin Fee</td>
-
-					<td><?= $admin_fee ?></td>
+					<td><?= $delivery_courier ?></td>
+					<?php if($user != 'Administrator'){ ?>
+					<td>Rp.<?= $delivery_price ?></td>
+					<?php } ?>
 				</tr>
 
 				<tr class="total">
