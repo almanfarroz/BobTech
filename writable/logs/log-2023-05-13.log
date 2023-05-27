@@ -1,0 +1,248 @@
+ERROR - 2023-05-13 05:05:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', 'store', 3306, '', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->process()
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->process()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-13 05:05:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->process()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-13 05:07:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', 'store', 3306, '', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->process()
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->process()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-13 05:07:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->process()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-13 05:09:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', 'store', 3306, '', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->process()
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Login->process()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-13 05:09:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->process()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 05:16:02 --> syntax error, unexpected token "catch"
+in APPPATH\Controllers\Login.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 05:16:32 --> Unmatched '}'
+in APPPATH\Controllers\Login.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 05:17:10 --> Unmatched '}'
+in APPPATH\Controllers\Login.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 05:17:19 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 05:26:19 --> The route for "/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/login')
+ 2 APPPATH\Controllers\Login.php(49): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->process()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 12:27:30 --> Undefined variable $list
+in APPPATH\Views\store\store-view.php on line 2.
+ 1 APPPATH\Views\store\store-view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\store-view.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\store-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 5 APPPATH\Controllers\Store.php(25): view('store/store-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 12:32:53 --> syntax error, unexpected token "echo"
+in APPPATH\Views\store\store-view.php on line 6.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 3 APPPATH\Controllers\Store.php(26): view('store/store-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 12:33:04 --> syntax error, unexpected token "echo"
+in APPPATH\Views\store\store-view.php on line 6.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 3 APPPATH\Controllers\Store.php(26): view('store/store-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 13:59:38 --> Too few arguments to function App\Controllers\Buy::index(), 0 passed in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Buy.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 14:34:33 --> Undefined variable $id
+in APPPATH\Views\store\buy-view.php on line 2.
+ 1 APPPATH\Views\store\buy-view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(27): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-13 15:10:16 --> syntax error, unexpected variable "$row", expecting ")"
+in APPPATH\Views\store\store-view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 3 APPPATH\Controllers\Store.php(26): view('store/store-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')

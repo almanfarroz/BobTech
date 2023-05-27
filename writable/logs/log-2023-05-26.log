@@ -1,0 +1,602 @@
+CRITICAL - 2023-05-26 02:24:52 --> Unsupported operand types: array + null
+in APPPATH\Controllers\Transaction.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:25:32 --> Attempt to read property "income" on array
+in APPPATH\Controllers\Transaction.php on line 76.
+ 1 APPPATH\Controllers\Transaction.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Transaction.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:25:42 --> Undefined array key "income"
+in APPPATH\Controllers\Transaction.php on line 76.
+ 1 APPPATH\Controllers\Transaction.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "income"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Transaction.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:29:54 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Transaction.php(76): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:30:55 --> Call to undefined method App\Models\IncomeOutcomeModel::whre
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Transaction.php(76): CodeIgniter\Model->__call('whre', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:41:15 --> Invalid file: "store/store-view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/store-view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 3 APPPATH\Controllers\Store.php(26): view('store/store-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:45:58 --> Undefined variable $sellPrice
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 APPPATH\Controllers\Admin.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sellPrice', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->BuyItem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:46:39 --> Undefined variable $sellPrice
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 APPPATH\Controllers\Admin.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sellPrice', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->BuyItem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:47:16 --> Undefined variable $sellPrice
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 APPPATH\Controllers\Admin.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sellPrice', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->BuyItem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:47:46 --> Undefined variable $sellPrice
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 APPPATH\Controllers\Admin.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sellPrice', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->BuyItem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:48:14 --> Undefined variable $sellPrice
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 APPPATH\Controllers\Admin.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sellPrice', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->BuyItem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:50:31 --> Undefined variable $sellPrice
+in APPPATH\Controllers\Admin.php on line 125.
+ 1 APPPATH\Controllers\Admin.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sellPrice', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->BuyItem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:53:27 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:53:39 --> Undefined array key ""
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:53:44 --> Undefined array key "income"
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "income"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:53:45 --> Undefined array key "income"
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "income"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:53:45 --> Undefined array key "income"
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "income"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:55:08 --> Undefined array key "income"
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "income"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:57:37 --> Undefined array key "income"
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "income"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:57:45 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 02:57:46 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:00:34 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:00:37 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:00:37 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:00:39 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:00:57 --> Attempt to read property "income" on array
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 APPPATH\Views\store\admin-view.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "income" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:01:20 --> syntax error, unexpected token ")"
+in APPPATH\Views\store\admin-view.php on line 156.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 3 APPPATH\Controllers\Admin.php(57): view('/store/admin-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:32:10 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Admin.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddItem()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:32:39 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Admin.php on line 139.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddItem()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 03:59:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\buy-view.php on line 4.
+ 1 APPPATH\Views\store\buy-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(40): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('29')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+ERROR - 2023-05-26 04:06:51 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\personal_project\BobTech\app\Controllers\Admin.php(167): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+#9 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\personal_project\BobTech\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-26 04:06:51 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `suppliers` (`name`) VALUES (\'a\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `suppliers` (`name`) VALUES (\'a\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `suppliers` (`name`) VALUES (\'a\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `suppliers` (`name`) VALUES (:name:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:07:21 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:07:38 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:08:43 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:12:04 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:12:36 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:12:59 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:22:00 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Admin.php(167): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->AddSupplier()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:30:56 --> Undefined variable $admin_fee
+in APPPATH\Views\store\invoice.php on line 173.
+ 1 APPPATH\Views\store\invoice.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_fee', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php', 173)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(90): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('434')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 04:35:46 --> Undefined variable $admin_fee
+in APPPATH\Views\store\invoice.php on line 173.
+ 1 APPPATH\Views\store\invoice.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_fee', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php', 173)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(90): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:14:45 --> Attempt to read property "role" on null
+in APPPATH\Controllers\Login.php on line 34.
+ 1 APPPATH\Controllers\Login.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "role" on null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Login.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->process()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:15:00 --> Attempt to read property "role" on null
+in APPPATH\Controllers\Login.php on line 34.
+ 1 APPPATH\Controllers\Login.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "role" on null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Login.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->process()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:16:59 --> Undefined variable $admin_fee
+in APPPATH\Views\store\invoice.php on line 173.
+ 1 APPPATH\Views\store\invoice.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_fee', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php', 173)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(90): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:17:02 --> Undefined variable $admin_fee
+in APPPATH\Views\store\invoice.php on line 173.
+ 1 APPPATH\Views\store\invoice.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_fee', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php', 173)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(90): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('554')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:17:45 --> Undefined variable $delivery
+in APPPATH\Controllers\Invoice.php on line 86.
+ 1 APPPATH\Controllers\Invoice.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $delivery', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:17:55 --> Undefined variable $delivery
+in APPPATH\Controllers\Invoice.php on line 86.
+ 1 APPPATH\Controllers\Invoice.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $delivery', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('554')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:18:51 --> Undefined variable $transaction
+in APPPATH\Controllers\Invoice.php on line 74.
+ 1 APPPATH\Controllers\Invoice.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:19:09 --> Undefined variable $transaction
+in APPPATH\Controllers\Invoice.php on line 74.
+ 1 APPPATH\Controllers\Invoice.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:19:13 --> Undefined variable $transaction
+in APPPATH\Controllers\Invoice.php on line 74.
+ 1 APPPATH\Controllers\Invoice.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:19:14 --> Undefined variable $transaction
+in APPPATH\Controllers\Invoice.php on line 74.
+ 1 APPPATH\Controllers\Invoice.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('553')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:19:21 --> Undefined variable $transaction
+in APPPATH\Controllers\Invoice.php on line 74.
+ 1 APPPATH\Controllers\Invoice.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaction', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('554')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-26 05:26:51 --> Undefined array key "buyer"
+in APPPATH\Controllers\Invoice.php on line 93.
+ 1 APPPATH\Controllers\Invoice.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "buyer"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->cartInv('554')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+ERROR - 2023-05-26 06:50:44 --> mysqli_sql_exception: Unknown column 'stockQty' in 'field list' in C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `stock` ...', 0)
+#1 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stock` ...')
+#2 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stock` ...')
+#3 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `stock` ...', Array, false)
+#4 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\personal_project\BobTech\app\Controllers\Transaction.php(82): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+#9 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#10 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\personal_project\BobTech\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-26 06:50:44 --> Unknown column 'stockQty' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `stock` SET `stock` = stock - stockQty
+WHERE `name` = \'Kingston SSD A400 480GB\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stock` SET `stock` = stock - stockQty
+WHERE `name` = \'Kingston SSD A400 480GB\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stock` SET `stock` = stock - stockQty
+WHERE `name` = \'Kingston SSD A400 480GB\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `stock` SET `stock` = stock - stockQty
+WHERE `name` = :name:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Transaction.php(82): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+ERROR - 2023-05-26 06:54:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `name` = 'AMD RYZEN 5 5500 BOX 6-Core 12-Thread'' at line 2 in C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `stock` ...', 0)
+#1 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stock` ...')
+#2 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stock` ...')
+#3 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `stock` ...', Array, false)
+#4 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\personal_project\BobTech\app\Controllers\Transaction.php(82): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+#9 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#10 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\personal_project\BobTech\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-26 06:54:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `name` = 'AMD RYZEN 5 5500 BOX 6-Core 12-Thread'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `stock` SET `stock` = stock - 
+WHERE `name` = \'AMD RYZEN 5 5500 BOX 6-Core 12-Thread\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stock` SET `stock` = stock - 
+WHERE `name` = \'AMD RYZEN 5 5500 BOX 6-Core 12-Thread\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stock` SET `stock` = stock - 
+WHERE `name` = \'AMD RYZEN 5 5500 BOX 6-Core 12-Thread\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `stock` SET `stock` = stock - 
+WHERE `name` = :name:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Transaction.php(82): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')

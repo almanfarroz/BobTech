@@ -1,0 +1,501 @@
+CRITICAL - 2023-05-17 16:22:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Transaction.php(76): CodeIgniter\Model->update('status')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 16:34:31 --> The route for "/invoice" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/invoice')
+ 2 APPPATH\Controllers\Transaction.php(77): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 16:34:57 --> The route for "/invoice" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/invoice')
+ 2 APPPATH\Controllers\Transaction.php(77): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 16:34:59 --> The route for "/invoice" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/invoice')
+ 2 APPPATH\Controllers\Transaction.php(77): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 16:35:08 --> The route for "/invoice" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/invoice')
+ 2 APPPATH\Controllers\Transaction.php(77): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->updateStatus()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 16:35:25 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Invoice.php on line 29
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Invoice.php(29): view('/templates/header', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 16:36:18 --> Invalid file: "/store/invoice-view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/store/invoice-view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/invoice-view.php', [], true)
+ 3 APPPATH\Controllers\Invoice.php(31): view('/store/invoice-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:36:44 --> file_get_contents(C:\xampp\htdocs\jordhy-ti4b\Lunatic\/assets/lunaticLogo.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\/assets/lunaticLogo.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 64)
+ 2 APPPATH\Controllers\Invoice.php(64): file_get_contents('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\/assets/lunaticLogo.png')
+ 3 APPPATH\Controllers\Invoice.php(45): App\Controllers\Invoice->imageToBase64('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\/assets/lunaticLogo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:40:17 --> file_get_contents(C:\xampp\htdocs\jordhy-ti4b\Lunatic\/assets/lunaticLogo.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\/assets/lunaticLogo.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 64)
+ 2 APPPATH\Controllers\Invoice.php(64): file_get_contents('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\/assets/lunaticLogo.png')
+ 3 APPPATH\Controllers\Invoice.php(45): App\Controllers\Invoice->imageToBase64('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\/assets/lunaticLogo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:40:48 --> file_get_contents(C:\xampp\htdocs\jordhy-ti4b\Lunatic\\assets\lunaticLogo.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\\\assets\\lunaticLogo.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 64)
+ 2 APPPATH\Controllers\Invoice.php(64): file_get_contents('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\\\assets\\lunaticLogo.png')
+ 3 APPPATH\Controllers\Invoice.php(45): App\Controllers\Invoice->imageToBase64('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\\\assets\\lunaticLogo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:40:54 --> file_get_contents(C:\xampp\htdocs\jordhy-ti4b\Lunatic\\assets\lunaticLogo.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\\\assets\\lunaticLogo.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 64)
+ 2 APPPATH\Controllers\Invoice.php(64): file_get_contents('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\\\assets\\lunaticLogo.png')
+ 3 APPPATH\Controllers\Invoice.php(45): App\Controllers\Invoice->imageToBase64('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\\\assets\\lunaticLogo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:40:56 --> file_get_contents(C:\xampp\htdocs\jordhy-ti4b\Lunatic\assets\lunaticLogo.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\assets\\lunaticLogo.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 64)
+ 2 APPPATH\Controllers\Invoice.php(64): file_get_contents('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\assets\\lunaticLogo.png')
+ 3 APPPATH\Controllers\Invoice.php(45): App\Controllers\Invoice->imageToBase64('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\assets\\lunaticLogo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:41:07 --> Array to string conversion
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:47:25 --> Array to string conversion
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:53:44 --> Undefined property: App\Controllers\Invoice::$51Lunatic SocietyXL5130000BCAJNEbbb659000paid2023-05-17 13:47:352023-05-17 16:36:34
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Invoice::$51Lunatic SocietyXL5130000BCAJNEbbb659000paid2023-05-17 13:47:352023-05-17 16:36:34', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:54:13 --> Undefined property: App\Controllers\Invoice::$51Lunatic SocietyXL5130000BCAJNEbbb659000paid2023-05-17 13:47:352023-05-17 16:36:34
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Invoice::$51Lunatic SocietyXL5130000BCAJNEbbb659000paid2023-05-17 13:47:352023-05-17 16:36:34', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:54:41 --> Call to undefined method App\Models\TransactionModel::row
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Model->__call('row', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:55:18 --> Undefined property: App\Controllers\Invoice::$51Lunatic SocietyXL5130000BCAJNEbbb659000paid2023-05-17 13:47:352023-05-17 16:36:34
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Invoice::$51Lunatic SocietyXL5130000BCAJNEbbb659000paid2023-05-17 13:47:352023-05-17 16:36:34', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:57:18 --> Array to string conversion
+in APPPATH\Controllers\Invoice.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 43)
+ 2 APPPATH\Controllers\Invoice.php(43): strval([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:57:48 --> Array to string conversion
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:58:47 --> Array to string conversion
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Invoice.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:59:23 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): implode('', 'Lunatic Society')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 17:59:52 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\Invoice.php on line 46.
+ 1 APPPATH\Controllers\Invoice.php(46): implode('', 'Lunatic Society')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 18:31:34 --> Undefined variable $id
+in APPPATH\Views\store\invoice.php on line 132.
+ 1 APPPATH\Views\store\invoice.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\invoice.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(55): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-17 18:39:11 --> mysqli_sql_exception: Unknown column 'price' in 'field list' in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `price`\n...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `price`\n...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `price`\n...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `price`\n...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Invoice.php(45): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-17 18:39:11 --> Unknown column 'price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `price`
+FROM `payment`
+WHERE `payment_method` = \'BCA\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `price`
+FROM `payment`
+WHERE `payment_method` = \'BCA\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `price`
+FROM `payment`
+WHERE `payment_method` = \'BCA\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `price`
+FROM `payment`
+WHERE `payment_method` = :payment_method:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Invoice.php(45): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 18:46:02 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 18:46:48 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 18:49:41 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Invoice.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 18:51:32 --> Call to a member function get_cellmap() on null
+in VENDORPATH\dompdf\dompdf\src\FrameReflower\TableCell.php on line 40.
+ 1 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\TableCell->reflow(null)
+ 2 VENDORPATH\dompdf\dompdf\src\FrameReflower\TableRow.php(56): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+ 3 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\TableRow->reflow(Object(Dompdf\FrameDecorator\Block))
+ 4 VENDORPATH\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+ 5 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+ 6 VENDORPATH\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(null)
+ 8 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+ 9 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(null)
+10 VENDORPATH\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+11 APPPATH\Controllers\Invoice.php(68): Dompdf\Dompdf->render()
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 18:51:39 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+Error
+Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\TableCell->reflow(NULL)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameReflower\TableRow.php(56): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\TableRow->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(Object(Dompdf\FrameDecorator\Block))
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Block->reflow(NULL)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Invoice.php(68): Dompdf\Dompdf->render()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#13 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-17 19:12:44 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:13:37 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:13:40 --> Array to string conversion
+in APPPATH\Controllers\Cart.php on line 34.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Cart.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:13:50 --> Attempt to read property "item_name" on null
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:14:36 --> Attempt to read property "item_name" on null
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:14:53 --> Attempt to read property "item_name" on null
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:14:54 --> Attempt to read property "item_name" on null
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:16:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:17:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:18:04 --> Cannot access offset of type string on string
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 4 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:18:15 --> Attempt to read property "item_name" on string
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on string', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:18:16 --> Attempt to read property "item_name" on string
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 APPPATH\Views\store\cart-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on string', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:18:26 --> Cannot access offset of type string on string
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 4 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:18:53 --> Cannot access offset of type string on string
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 4 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:18:54 --> Cannot access offset of type string on string
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 4 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:21:07 --> Call to undefined method App\Models\TransactionModel::getResult
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Cart.php(34): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-17 19:22:24 --> Cannot use object of type stdClass as array
+in APPPATH\Views\store\cart-view.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 4 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')

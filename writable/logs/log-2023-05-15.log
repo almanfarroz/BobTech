@@ -1,0 +1,1643 @@
+ERROR - 2023-05-15 03:34:56 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Buy.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-15 03:34:56 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (\'arfiano\', \'a\', \'2023-05-15 03:34:55\', \'2023-05-15 03:34:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (\'arfiano\', \'a\', \'2023-05-15 03:34:55\', \'2023-05-15 03:34:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (\'arfiano\', \'a\', \'2023-05-15 03:34:55\', \'2023-05-15 03:34:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (:user:, :comment:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Buy.php(45): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 03:35:39 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Buy.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-15 03:35:39 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (\'arfiano\', \'aa\', \'2023-05-15 03:35:39\', \'2023-05-15 03:35:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (\'arfiano\', \'aa\', \'2023-05-15 03:35:39\', \'2023-05-15 03:35:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (\'arfiano\', \'aa\', \'2023-05-15 03:35:39\', \'2023-05-15 03:35:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`user`, `comment`, `created_at`, `updated_at`) VALUES (:user:, :comment:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Buy.php(45): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 03:38:02 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Buy.php(32): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-15 03:38:02 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `stock`
+WHERE `id` = \'2\'
+ORDER BY `created_at` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `stock`
+WHERE `id` = \'2\'
+ORDER BY `created_at` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `stock`
+WHERE `id` = \'2\'
+ORDER BY `created_at` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `stock`
+WHERE `id` = :id:
+ORDER BY `created_at` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Buy.php(32): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 03:38:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\comments-view.php on line 19.
+ 1 APPPATH\Views\store\comments-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 03:51:02 --> Undefined variable $row
+in APPPATH\Views\store\comments-view.php on line 8.
+ 1 APPPATH\Views\store\comments-view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 03:51:54 --> Attempt to read property "id" on array
+in APPPATH\Views\store\comments-view.php on line 8.
+ 1 APPPATH\Views\store\comments-view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 03:51:58 --> Attempt to read property "id" on array
+in APPPATH\Views\store\comments-view.php on line 8.
+ 1 APPPATH\Views\store\comments-view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 03:54:02 --> Attempt to read property "id" on array
+in APPPATH\Views\store\comments-view.php on line 8.
+ 1 APPPATH\Views\store\comments-view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 03:54:11 --> Undefined variable $list
+in APPPATH\Views\store\comments-view.php on line 8.
+ 1 APPPATH\Views\store\comments-view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:01:27 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:02:27 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:02:46 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:08:16 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:08:24 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:09:46 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:10:03 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:10:06 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:12:01 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:13:07 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:13:27 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:13:35 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:13:59 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:14:02 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:14:44 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:14:55 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:15:01 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 04:15:14 --> Object of class App\Controllers\Buy could not be converted to string
+in APPPATH\Controllers\Buy.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->AddComments()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 15:48:59 --> Object of class App\Controllers\Transaction could not be converted to string
+in APPPATH\Controllers\Transaction.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 15:50:20 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Transaction.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 15:50:22 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Transaction.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 15:51:30 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Transaction.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 15:51:35 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Transaction.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:15:08 --> Undefined variable $data
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(26): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:16:49 --> Undefined array key "item_name"
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(26): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:17:27 --> Undefined array key "item_name"
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(26): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:23:23 --> Undefined array key "item_name"
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(26): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:24:27 --> Undefined array key "item_name"
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(25): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:24:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get_result()
+in APPPATH\Controllers\Transaction.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:25:00 --> Undefined array key "item_name"
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(25): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 16:25:56 --> Undefined array key "item_name"
+in APPPATH\Views\store\transaction-view.php on line 10.
+ 1 APPPATH\Views\store\transaction-view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(25): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 17:47:52 --> Undefined array key "payment_method"
+in APPPATH\Views\store\buy-view.php on line 60.
+ 1 APPPATH\Views\store\buy-view.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment_method"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 17:48:22 --> mysqli_sql_exception: Table 'store.payments' doesn't exist in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Buy.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-15 17:48:22 --> Table 'store.payments' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `payments`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Buy.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 17:51:49 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 17:55:47 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Transaction.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-15 17:55:47 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:55:47\', \'2023-05-15 17:55:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:55:47\', \'2023-05-15 17:55:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:55:47\', \'2023-05-15 17:55:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (:item_name:, :size:, :quantity:, :price:, :payment_method:, :delivery_courier:, :total_price:, :address:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Transaction.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 17:56:29 --> mysqli_sql_exception: Column 'item_name' cannot be null in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Transaction.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-15 17:56:29 --> Column 'item_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:56:29\', \'2023-05-15 17:56:29\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:56:29\', \'2023-05-15 17:56:29\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:56:29\', \'2023-05-15 17:56:29\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (:item_name:, :size:, :quantity:, :price:, :payment_method:, :delivery_courier:, :total_price:, :address:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Transaction.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 17:57:10 --> mysqli_sql_exception: Column 'item_name' cannot be null in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Transaction.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-15 17:57:10 --> Column 'item_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:57:10\', \'2023-05-15 17:57:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:57:10\', \'2023-05-15 17:57:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (NULL, \'on\', \'5\', NULL, \'BRI\', NULL, NULL, NULL, \'2023-05-15 17:57:10\', \'2023-05-15 17:57:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (:item_name:, :size:, :quantity:, :price:, :payment_method:, :delivery_courier:, :total_price:, :address:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Transaction.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 18:01:21 --> mysqli_sql_exception: Column 'delivery_courier' cannot be null in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Transaction.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-15 18:01:21 --> Column 'delivery_courier' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (\'Lunatic Society\', \'on\', \'1\', \'130000\', \'BCA\', NULL, NULL, NULL, \'2023-05-15 18:01:21\', \'2023-05-15 18:01:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (\'Lunatic Society\', \'on\', \'1\', \'130000\', \'BCA\', NULL, NULL, NULL, \'2023-05-15 18:01:21\', \'2023-05-15 18:01:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (\'Lunatic Society\', \'on\', \'1\', \'130000\', \'BCA\', NULL, NULL, NULL, \'2023-05-15 18:01:21\', \'2023-05-15 18:01:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`item_name`, `size`, `quantity`, `price`, `payment_method`, `delivery_courier`, `total_price`, `address`, `created_at`, `updated_at`) VALUES (:item_name:, :size:, :quantity:, :price:, :payment_method:, :delivery_courier:, :total_price:, :address:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Transaction.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:03:08 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:10:42 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:12:10 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:17:13 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(38): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:17:23 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(38): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:17:35 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(38): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:19:50 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(40): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:20:05 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(40): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:22:02 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(40): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:22:07 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(40): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:23:00 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(40): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:23:37 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:23:55 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:24:31 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:27:31 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\Transaction.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:27:39 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\Transaction.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Transaction')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Transaction')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Transaction', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:29:14 --> Attempt to read property "admin_fee" on null
+in APPPATH\Controllers\Transaction.php on line 50.
+ 1 APPPATH\Controllers\Transaction.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:29:59 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:31:15 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 50.
+ 1 APPPATH\Controllers\Transaction.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:32:09 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 50.
+ 1 APPPATH\Controllers\Transaction.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:32:34 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 50.
+ 1 APPPATH\Controllers\Transaction.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:38:43 --> Attempt to read property "price" on array
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "price" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:46:38 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:47:51 --> Undefined array key "admin_fee"
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_fee"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:48:43 --> Undefined array key "admin_fee"
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_fee"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:49:11 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:50:49 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:50:52 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 53.
+ 1 APPPATH\Controllers\Transaction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:52:36 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 55.
+ 1 APPPATH\Controllers\Transaction.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:52:38 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 55.
+ 1 APPPATH\Controllers\Transaction.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:53:16 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 55.
+ 1 APPPATH\Controllers\Transaction.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:59:02 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 51.
+ 1 APPPATH\Controllers\Transaction.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 18:59:28 --> Attempt to read property "admin_fee" on array
+in APPPATH\Controllers\Transaction.php on line 47.
+ 1 APPPATH\Controllers\Transaction.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "admin_fee" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->AddTransaction()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:00:46 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:01:32 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:01:43 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:02:24 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:03:07 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:04:25 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:05:22 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:07:09 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:11:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\transaction-view.php on line 5.
+ 1 APPPATH\Views\store\transaction-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(31): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:12:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\transaction-view.php on line 5.
+ 1 APPPATH\Views\store\transaction-view.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(31): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:23:13 --> Object of class App\Models\TransactionModel could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `courier_name`
+FROM `courier`
+WHERE `courier_name` = :courier_name:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Transaction.php(30): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:26:41 --> Cannot use object of type App\Models\CourierModel as array
+in APPPATH\Views\store\transaction-view.php on line 18.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 4 APPPATH\Controllers\Transaction.php(36): view('/store/transaction-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:28:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(36): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:28:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(36): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+ERROR - 2023-05-15 19:29:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `transactions`
+ORDER BY `id` DESC
+ LIMIT 1' at line 1 in C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `payment...', 0)
+#1 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `payment...')
+#2 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `payment...')
+#3 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `payment...', Array, false)
+#4 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\jordhy-ti4b\Lunatic\app\Controllers\Transaction.php(32): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaction->index()
+#8 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+#9 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\jordhy-ti4b\Lunatic\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\jordhy-ti4b\Lunatic\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-15 19:29:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `transactions`
+ORDER BY `id` DESC
+ LIMIT 1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `payment_method`, `delivery_courier`, *
+FROM `transactions`
+ORDER BY `id` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `payment_method`, `delivery_courier`, *
+FROM `transactions`
+ORDER BY `id` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `payment_method`, `delivery_courier`, *
+FROM `transactions`
+ORDER BY `id` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `payment_method`, `delivery_courier`, *
+FROM `transactions`
+ORDER BY `id` DESC
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Transaction.php(32): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:30:27 --> Undefined variable $courierName
+in APPPATH\Controllers\Transaction.php on line 31.
+ 1 APPPATH\Controllers\Transaction.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $courierName', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:30:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(36): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:32:05 --> Attempt to read property "delivery_courier" on array
+in APPPATH\Controllers\Transaction.php on line 30.
+ 1 APPPATH\Controllers\Transaction.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "delivery_courier" on array', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:33:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaction.php on line 29.
+ 1 APPPATH\Controllers\Transaction.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Transaction.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:37:35 --> Undefined array key "admin_fee"
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_fee"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:38:42 --> Undefined array key "admin_fee"
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_fee"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:40:15 --> Undefined array key "admin_fee"
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_fee"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:41:59 --> Cannot use object of type App\Models\CourierModel as array
+in APPPATH\Views\store\transaction-view.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 4 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:42:31 --> Cannot use object of type App\Models\CourierModel as array
+in APPPATH\Views\store\transaction-view.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 4 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:42:57 --> Cannot use object of type App\Models\CourierModel as array
+in APPPATH\Views\store\transaction-view.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 4 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:53:47 --> Undefined array key "CONCAT("Rp.", FORMAT(price, 2)"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CONCAT("Rp.", FORMAT(price, 2)"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:54:49 --> Undefined array key "CONCAT("Rp", FORMAT(admin_fee, 2)"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CONCAT("Rp", FORMAT(admin_fee, 2)"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:54:52 --> Undefined array key "CONCAT("Rp", FORMAT(admin_fee, 2)"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CONCAT("Rp", FORMAT(admin_fee, 2)"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:55:01 --> Undefined array key "CONCAT("Rp", FORMAT(price, 2)"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "CONCAT("Rp", FORMAT(price, 2)"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:56:45 --> Undefined array key "formattedPrice"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "formattedPrice"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:58:51 --> Undefined array key "formattedPrice"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "formattedPrice"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-15 19:59:23 --> Undefined array key "formattedPrice"
+in APPPATH\Views\store\buy-view.php on line 25.
+ 1 APPPATH\Views\store\buy-view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "formattedPrice"', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(43): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')

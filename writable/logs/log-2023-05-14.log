@@ -1,0 +1,165 @@
+CRITICAL - 2023-05-14 06:14:06 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Buy.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Buy.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Buy')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Buy')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Buy', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 06:14:08 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Buy.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Controllers\\Buy.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Buy')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Buy')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Buy', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 06:15:28 --> Call to a member function first() on array
+in APPPATH\Controllers\Buy.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 06:15:31 --> Call to a member function first() on array
+in APPPATH\Controllers\Buy.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 06:33:33 --> Call to a member function first() on array
+in APPPATH\Controllers\Buy.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 06:36:31 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:50:15 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:50:15 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:53:55 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:55:26 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew.php', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:55:31 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew.php', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:55:32 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew.php', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:56:01 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew.php', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:56:06 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew.php', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 11:56:11 --> Invalid file: "store/comments-vew.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/comments-vew.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-vew.php', [], true)
+ 3 APPPATH\Controllers\Buy.php(36): view('store/comments-vew.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 12:02:51 --> Undefined variable $comments
+in APPPATH\Views\store\comments-view.php on line 2.
+ 1 APPPATH\Views\store\comments-view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comments', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')
+CRITICAL - 2023-05-14 12:03:53 --> Undefined variable $sdata
+in APPPATH\Views\store\comments-view.php on line 4.
+ 1 APPPATH\Views\store\comments-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sdata', 'C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\app\\Views\\store\\comments-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/comments-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(36): view('store/comments-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\jordhy-ti4b\\Lunatic\\public\\index.php')

@@ -1,0 +1,346 @@
+CRITICAL - 2023-05-25 06:42:17 --> Invalid file: "store/store-view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/store-view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 3 APPPATH\Controllers\Store.php(26): view('store/store-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 06:46:38 --> Undefined array key "size"
+in APPPATH\Views\store\transaction-view.php on line 19.
+ 1 APPPATH\Views\store\transaction-view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "size"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\transaction-view.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 06:52:06 --> Undefined array key "name"
+in APPPATH\Views\store\transaction-view.php on line 14.
+ 1 APPPATH\Views\store\transaction-view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\transaction-view.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\transaction-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/transaction-view.php', [], true)
+ 5 APPPATH\Controllers\Transaction.php(40): view('/store/transaction-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 07:14:53 --> file_get_contents(C:\xampp\htdocs\personal_project\BobTech\public\assets\lunaticLogo.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Invoice.php on line 98.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\assets\\lunaticLogo.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 98)
+ 2 APPPATH\Controllers\Invoice.php(98): file_get_contents('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\assets\\lunaticLogo.png')
+ 3 APPPATH\Controllers\Invoice.php(51): App\Controllers\Invoice->imageToBase64('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\assets\\lunaticLogo.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 07:24:52 --> Undefined array key "payment"
+in APPPATH\Controllers\Invoice.php on line 60.
+ 1 APPPATH\Controllers\Invoice.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Invoice.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 07:29:19 --> Array to string conversion
+in APPPATH\Views\store\invoice.php on line 175.
+ 1 APPPATH\Views\store\invoice.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php', 175)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(68): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 07:29:20 --> Array to string conversion
+in APPPATH\Views\store\invoice.php on line 175.
+ 1 APPPATH\Views\store\invoice.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php', 175)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/invoice.php', [], true)
+ 5 APPPATH\Controllers\Invoice.php(68): view('store/invoice.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->pdfGenerator()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 08:19:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\buy-view.php on line 4.
+ 1 APPPATH\Views\store\buy-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(39): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 08:19:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\buy-view.php on line 4.
+ 1 APPPATH\Views\store\buy-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(39): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 08:20:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\buy-view.php on line 4.
+ 1 APPPATH\Views\store\buy-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(39): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 08:20:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\store\buy-view.php on line 4.
+ 1 APPPATH\Views\store\buy-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\buy-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/buy-view.php', [], true)
+ 5 APPPATH\Controllers\Buy.php(39): view('store/buy-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buy->display('10')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 14:16:16 --> Undefined array key "category_id"
+in APPPATH\Views\store\home.php on line 18.
+ 1 APPPATH\Views\store\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\home.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/home.php', [], true)
+ 5 APPPATH\Controllers\Main.php(23): view('store/home.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 14:27:52 --> Undefined property: stdClass::$size
+in APPPATH\Views\store\history-view.php on line 9.
+ 1 APPPATH\Views\store\history-view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$size', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\history-view.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\history-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/history-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(45): view('/store/history-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 14:27:56 --> Undefined property: stdClass::$size
+in APPPATH\Views\store\cart-view.php on line 11.
+ 1 APPPATH\Views\store\cart-view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$size', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\cart-view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\cart-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/cart-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(36): view('/store/cart-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 15:00:35 --> Undefined property: stdClass::$size
+in APPPATH\Views\store\history-view.php on line 9.
+ 1 APPPATH\Views\store\history-view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$size', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\history-view.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\history-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/history-view.php', [], true)
+ 5 APPPATH\Controllers\Cart.php(45): view('/store/history-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cart->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 15:02:23 --> Invalid file: "store/store-view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('store/store-view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('store/store-view.php', [], true)
+ 3 APPPATH\Controllers\Store.php(26): view('store/store-view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Store->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Store))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+ERROR - 2023-05-25 17:01:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 5 in C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\personal_project\BobTech\app\Controllers\Admin.php(46): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Admin->display()
+#7 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\personal_project\BobTech\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\personal_project\BobTech\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-25 17:01:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `stock`
+JOIN `suppliers` ON `suppliers`.`id` = `stock`.`supplier`
+JOIN `category` ON `category`.`id` = `stock`.`category`
+WHERE 0 = :0:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `stock`
+JOIN `suppliers` ON `suppliers`.`id` = `stock`.`supplier`
+JOIN `category` ON `category`.`id` = `stock`.`category`
+WHERE 0 = :0:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `stock`
+JOIN `suppliers` ON `suppliers`.`id` = `stock`.`supplier`
+JOIN `category` ON `category`.`id` = `stock`.`category`
+WHERE 0 = :0:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `stock`
+JOIN `suppliers` ON `suppliers`.`id` = `stock`.`supplier`
+JOIN `category` ON `category`.`id` = `stock`.`category`
+WHERE 0 = :0:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(46): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:33:41 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Admin.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:33:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Controllers\Admin.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:33:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Controllers\Admin.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:39:26 --> Attempt to read property "pager" on array
+in APPPATH\Controllers\Admin.php on line 46.
+ 1 APPPATH\Controllers\Admin.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "pager" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Controllers\\Admin.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:39:50 --> Attempt to read property "item_name" on array
+in APPPATH\Views\store\admin-view.php on line 28.
+ 1 APPPATH\Views\store\admin-view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "item_name" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(52): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:41:26 --> Attempt to read property "id" on array
+in APPPATH\Views\store\admin-view.php on line 38.
+ 1 APPPATH\Views\store\admin-view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(52): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:42:45 --> Undefined variable $pager
+in APPPATH\Views\store\admin-view.php on line 44.
+ 1 APPPATH\Views\store\admin-view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 5 APPPATH\Controllers\Admin.php(52): view('/store/admin-view.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:56:19 --> "pagination" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('data', 'pagination')
+ 3 APPPATH\Views\store\admin-view.php(44): CodeIgniter\Pager\Pager->links('data', 'pagination')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 7 APPPATH\Controllers\Admin.php(53): view('/store/admin-view.php', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:57:00 --> "pagination" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('data', 'pagination')
+ 3 APPPATH\Views\store\admin-view.php(44): CodeIgniter\Pager\Pager->links('data', 'pagination')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 7 APPPATH\Controllers\Admin.php(53): view('/store/admin-view.php', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:57:30 --> "pagers/pagination" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('pagers/pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('data', 'pagers/pagination')
+ 3 APPPATH\Views\store\admin-view.php(44): CodeIgniter\Pager\Pager->links('data', 'pagers/pagination')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 7 APPPATH\Controllers\Admin.php(53): view('/store/admin-view.php', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
+CRITICAL - 2023-05-25 17:58:05 --> "app/Views/pagers/pagination" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('app/Views/pagers/pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('data', 'app/Views/pagers/pagination')
+ 3 APPPATH\Views\store\admin-view.php(44): CodeIgniter\Pager\Pager->links('data', 'app/Views/pagers/pagination')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\personal_project\\BobTech\\app\\Views\\store\\admin-view.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/store/admin-view.php', [], true)
+ 7 APPPATH\Controllers\Admin.php(53): view('/store/admin-view.php', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->display()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\personal_project\\BobTech\\public\\index.php')
